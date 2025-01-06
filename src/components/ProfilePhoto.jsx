@@ -1,18 +1,15 @@
-import Background from "../assets/backdrop.jpg";
-import Photo from "../assets/mr-mittens.jpg";
-
-const ProfilePhoto = () => {
+const ProfilePhoto = (props) => {
   return (
     <header className="background">
       <img
         className="background--backdrop"
-        src={Background}
-        alt="background photo"
+        src={props.background.src}
+        alt={props.background.alt}
       />
       <img
         className="background--profile__photo"
-        src={Photo}
-        alt="photo of mr mittens"
+        src={props.photo.src}
+        alt={props.photo.alt}
       />
     </header>
   );
