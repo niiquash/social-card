@@ -10,8 +10,11 @@ body {
 
 .App {
   margin: auto;
-  width: 500px;
+  width: 450px;
+  background-color: white;
 }
+
+/* Background and Profile Photo */
 
 .background {
   margin-top: 3rem;
@@ -36,4 +39,61 @@ body {
   transform: translate(-50%, -50%);
   border: 3px solid rgb(87, 87, 87);
   border-radius: 50%;
+}
+
+/* Bio */
+.bio {
+  margin-top: 6rem;
+  padding: 0 2rem;
+}
+
+.bio--name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 150%;
+  margin-bottom: 0.5rem;
+}
+
+.bio--description {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 150%;
+  margin-top: 0;
+}
+
+/* Info */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+}
+
+.info--location-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+.info--location,
+.info--email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.info--location__icon,
+.info--email__icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
 }
