@@ -97,3 +97,31 @@ body {
   height: 1.2rem;
   margin-right: 0.5rem;
 }
+
+.info--followers-following {
+  display: flex;
+  width: 100%;
+  background-color: rgba(178, 184, 187, 0.09);
+}
+
+.info--followers,
+.info--following {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.09);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  width: 50%;
+  padding: 1rem 0;
+}
+
+.info--followers {
+  border-right: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.info--followers__number,
+.info--following__number {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
